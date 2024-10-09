@@ -9,9 +9,7 @@ import Thanks from "./pages/Thanks";
 import "./styles/main.css";
 import { ThemeProvider } from "./contexts/themeProvider";
 
-const children = createBrowserRouter([
-  
-])
+
 const routerConfig = createBrowserRouter([
   {
     path: "/",

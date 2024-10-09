@@ -48,6 +48,7 @@ a {
 }
 .container._dark{
   background-color: #000;
+  color: #fff;
 }
 .wrapper {
   width: 338px;

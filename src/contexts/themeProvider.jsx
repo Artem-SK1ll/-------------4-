@@ -1,8 +1,7 @@
-import React, { Children, useEffect, useMemo, useState } from "react";
+import React, {  useEffect, useMemo, useState } from "react";
 import { ThemeContext, themes } from "./themeContext";
 
-
-export const ThemeProvider=()=>{
+export const ThemeProvider=({children})=>{
      const   [themeValue,setThemeValue ]=useState(themes.light)  
      
      useEffect(()=>{
@@ -27,5 +26,5 @@ export const ThemeProvider=()=>{
         toggleTheme
       }
      },[themeValue])
-     return <ThemeContext.Provider>{children}</ThemeContext.Provider> 
+     return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider> 
 };

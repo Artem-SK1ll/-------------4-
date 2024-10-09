@@ -1,5 +1,6 @@
 import React from "react";
 import { ProgressBar } from "../components/ProgressBar";
+import { LinkButton } from "../components/LinkButton";
 
 const StepFour = () => {
   return (
@@ -11,7 +12,7 @@ const StepFour = () => {
               <span className="indicator__description">
                 Скидка за прохождение опроса:
               </span>
-              <span className="indicator__value">15%</span>
+              <span className="indicator__value">30%</span>
             </div>
           <ProgressBar currentStep={4}/>
           </div>
@@ -39,9 +40,7 @@ const StepFour = () => {
                 <label htmlFor="variant-5">5</label>
               </li>
             </ul>
-            <button type="button" id="next-btn" disabled>
-              Далее
-            </button>
+            <LinkButton path="step-thanks"></LinkButton>
           </div>
         </div>
       </div>

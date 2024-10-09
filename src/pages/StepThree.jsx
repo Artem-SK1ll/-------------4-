@@ -1,5 +1,7 @@
 import React from "react";
 import { ProgressBar } from "../components/ProgressBar";
+import { Link } from "react-router-dom";
+import { LinkButton } from "../components/LinkButton";
 
 const StepThree = () => {
   return (
@@ -7,14 +9,12 @@ const StepThree = () => {
       <div className="wrapper">
         <div className="emoji-quiz">
           <div className="indicator">
-            <div className="indicator__text">
-              <span className="indicator__description">
-                Скидка за прохождение опроса:
-              </span>
-              <span className="indicator__value">15%</span>
-            </div>
-            <ProgressBar currentStep={3}/>
+            <span className="indicator-text">
+              Скидка за прохождение опроса:
+            </span>
+            <span className="indicator__value">25%</span>
           </div>
+          <ProgressBar currentStep={3} />
           <div className="question">
             <h2>3. Занимательный вопрос</h2>
             <ul className="emoji-variants">
@@ -47,9 +47,7 @@ const StepThree = () => {
                 </label>
               </li>
             </ul>
-            <button type="button" disabled id="next-btn">
-              Далее
-            </button>
+            <LinkButton path="step-four" />
           </div>
         </div>
       </div>

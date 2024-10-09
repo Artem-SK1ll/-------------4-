@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { Header } from "../components/Header";
 import { AppLabel } from "../components/AppLabel";
 import { AppButton } from "../components/AppButton";
-import { LinkButton } from "../components/LinkButton";
 import { ThemeContext, themes } from "../contexts/themeContext";
 
 const Welcome = () => {

@@ -31,7 +31,7 @@ const StepTwo = () => {
               <span className="indicator__description">
                 Скидка за прохождение опроса:
               </span>
-              <span className="indicator__value">15%</span>
+              <span className="indicator__value">20%</span>
             </div>
              <ProgressBar currentStep={2}/>
           </div>
@@ -55,7 +55,7 @@ const StepTwo = () => {
                 <label htmlFor="variant-4">Ваш ответ</label>
               </li>
             </ul>
-           <LinkButton path="step-there"></LinkButton>
+           <LinkButton path="step-three"></LinkButton>
           </div>
         </div>
       </div>
