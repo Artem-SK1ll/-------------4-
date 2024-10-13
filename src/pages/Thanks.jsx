@@ -1,4 +1,5 @@
 import React from "react";
+import { ProgressBar } from "../components/ProgressBar";
 
 const Thanks = () => {
   return (
@@ -11,6 +12,7 @@ const Thanks = () => {
           <button type="button" id="get-link">
             Получить ссылку
           </button>
+          
         </div>
       </div>
     </div>
